@@ -14,7 +14,25 @@ This repository is just continuation of the same work.
 
 ## Installation
 
-Coming soon
+The dependency can added directly from Sonatype. Currently, it's only available on Sonatype's snapshot repo
+
+1. Add the following in your root/build.gradle file to fetch from snapshot repository:
+
+```groovy
+repositories {
+  maven { url 'http://oss.sonatype.org/content/repositories/snapshots' }
+}
+```
+
+2. Then add the following dependency in your module/build.gradle file
+
+```groovy
+dependencies {
+  implementation "com.github.akshaychordiya.kotlinx.coroutines:rx1:0.1-SNAPSHOT"
+}
+```
+
+See the [releases page](https://github.com/AkshayChordiya/kotlinx.coroutines-rx1/releases) for up to date release versions and details
 
 ## Usage
 

@@ -2,6 +2,7 @@ buildscript {
     ext.kotlinVersion = '1.3.72'
     ext.kotlinCoroutinesVersion = '1.3.7'
     ext.rxJavaVersion = '1.3.8'
+    ext.mavenPublishVersion = '0.11.1'
 
     repositories {
         mavenCentral()
@@ -9,10 +10,12 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.vanniktech:gradle-maven-publish-plugin:$mavenPublishVersion"
     }
 }
 
 apply plugin: 'kotlin'
+apply plugin: "com.vanniktech.maven.publish"
 
 group 'com.github.akshaychordiya.kotlinx.coroutines'
 version '0.1-SNAPSHOT'
