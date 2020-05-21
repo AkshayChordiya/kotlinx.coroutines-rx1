@@ -1,0 +1,6 @@
+# Project configuration
+.idea
+
+# Build
+.gradle
+build
